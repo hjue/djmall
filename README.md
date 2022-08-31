@@ -1,10 +1,27 @@
 # djmall
 
+基于 Django + Vue3  的商城系统
+
+
+
+## 项目截图
+
+| ![image-20220831135119684](https://dev-docs-image.s3.cn-north-1.jdcloud-oss.com/images/image-20220831135119684.png) | ![image-20220831135343695](https://dev-docs-image.s3.cn-north-1.jdcloud-oss.com/images/image-20220831135343695.png) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+
+
+
+
+
+
+
 ## 运行环境
 
 -  python3
 -  django 
 -  node.js
+
+项目截图
 
 ## 安装
 
