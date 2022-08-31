@@ -3,6 +3,7 @@
 基于 Django + Vue3  的商城系统
 
 
+在 WebIDE 中体验开发 , 点击 [https://idegitcode.net/hjue/djmall](https://idegitcode.net/hjue/djmall)
 
 ## 项目截图
 
