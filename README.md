@@ -39,7 +39,7 @@ pnpm install
 
 ```
 cd backend
-pip install -f requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
+pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
 ```
 
 ## 运行
