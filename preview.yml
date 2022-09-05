@@ -7,7 +7,7 @@ apps:
     description: Python Dev IDE Demo Project 
     autoOpen: true
   - port: 3000
-    run: cd frontend;npm install && npm run dev
+    run: cd frontend;pnpm install && pnpm run dev
     root: /ide/workspace/djmall/frontend 
     name: djmall-frontend 
     description: Python Dev IDE Demo Project 
