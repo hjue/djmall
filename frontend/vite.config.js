@@ -11,4 +11,10 @@ export default defineConfig({
       mockPath: "mock", //mock的路径
     }),
   ],
+  server: {
+    host: "0.0.0.0",
+    hmr: {      
+      port: 443
+    }
+  }
 });
