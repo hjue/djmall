@@ -115,10 +115,7 @@ export default {
       }
     };
     const gotoDetail = (id) => {
-      router.push({
-        name: "详情页",
-        params: { id: id },
-      });
+      router.push("/detail/"+id);
     };
     return {
       data,

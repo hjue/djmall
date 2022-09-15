@@ -31,7 +31,7 @@ const routes = [
     component: () => import("../views/Test.vue"),
   },
   {
-    path: "/detail",
+    path: "/detail/:id",
     name: "详情页",
     component: () => import("../views/detail/Detail.vue"),
   },
