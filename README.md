@@ -63,7 +63,7 @@ pnpm run dev
 
 登录后台
 
-访问 http://127.0.0.1:8000/admin/
+访问 http://127.0.0.1:8001/admin/
 
 用户名： star 
 密码： star

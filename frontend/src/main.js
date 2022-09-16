@@ -10,7 +10,7 @@ import "@fortawesome/fontawesome-free/css/all.css"; //添加fontawesome样式
 import "@fortawesome/fontawesome-free/js/all"; //添加fontawesome脚本
 // 创建VUE对象
 const vue = createApp(App);
-vue.config.globalProperties.url = 'http://127.0.0.1:8000/'
+vue.config.globalProperties.url = 'http://127.0.0.1:8001/'
 vue
   .use(router) // 使用.use(router)添加路由router
   .use(store) // 使用.use(store)添加全局存储vuex

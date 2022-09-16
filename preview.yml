@@ -1,7 +1,7 @@
 autoOpen: true
 apps:
-  - port: 8000 
-    run: cd backend;pip install -i https://mirrors.aliyun.com/pypi/simple/ -r requirements.txt && python manage.py runserver 0.0.0.0:8000 # 应用的启动命令
+  - port: 8001 
+    run: cd backend;pip install -i https://mirrors.aliyun.com/pypi/simple/ -r requirements.txt && python manage.py runserver 0.0.0.0:8001 # 应用的启动命令
     root: /ide/workspace/djmall/backend 
     name: djmall-backend 
     description: Python Dev IDE Demo Project 

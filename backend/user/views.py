@@ -11,6 +11,7 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from user.models import User
 
+
 @csrf_exempt
 def signin(request):
     # 响应对象
@@ -22,12 +23,14 @@ def signin(request):
     # 请求对象
     body = json.loads(request.body.decode("utf-8"))
     # 查询数据
-    list = User.objects.filter(username=body['username'],is_delete=False)
-    if check_password(body['password'],list[0].password):
+    list = User.objects.filter(username=body['username'], is_delete=False)
+    if check_password(body['password'], list[0].password):
         # JSON格式化
-        json_user = json.loads(serializers.serialize('json', list, use_natural_foreign_keys=True))
+        json_user = json.loads(serializers.serialize(
+            'json', list, use_natural_foreign_keys=True))
         json_user[0]['fields']['id'] = list[0].id
-        json_user[0]['fields']['avatar'] = 'http://127.0.0.1:8000/' + json_user[0]['fields']['avatar']
+        json_user[0]['fields']['avatar'] = 'http://127.0.0.1:8001/' + \
+            json_user[0]['fields']['avatar']
         response['data'] = json_user
     else:
         response['data'] = []
@@ -50,7 +53,8 @@ def signup(request):
     salt = ''.join(random.sample('zyxwvutsrqponmlkjihgfedcba', 5))
     # 查询数据
     # password = make_password(body['password'], salt)
-    user = User(username=body['username'], password=body['password'], salt=salt)
+    user = User(username=body['username'],
+                password=body['password'], salt=salt)
     user.save()
     list = User.objects.filter(id=user.id)
     # JSON格式化
